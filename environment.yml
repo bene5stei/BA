@@ -1,4 +1,4 @@
-name: ampratio
+name: romy
 channels:
   - conda-forge
   - defaults
@@ -9,11 +9,21 @@ dependencies:
   - matplotlib
   - obspy
   - jupyter
+  - ipykernel
   - scipy
   - tqdm
   - basemap
-  - ipython
-  - ipykernel
-  - ipywidgets
-  - notebook
   - pip
+  # Optional visualization dependencies
+  - ipympl  # For interactive matplotlib plots in notebooks
+  - notebook # For running Jupyter notebooks
+  
+  # Development tools
+  - ipython
+  - jupyter_contrib_nbextensions  # For notebook extensions like TOC
+  
+  # Custom packages will need to be installed separately:
+  # - andbro__store_as_pickle
+  # - andbro__get_data_george 
+  # - andbro__save_to
+  # - andbro__get_data_archive 
